@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_activity"
+        android:icon="@drawable/ic_activity"
+        android:title="Activities" />
+    <item
+        android:id="@+id/item_accomodation"
+        android:icon="@drawable/ic_hotel"
+        android:title="Accomodation" />
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/ic_home"
+        android:title="home" />
+    <item
+        android:id="@+id/item_bookings"
+        android:icon="@drawable/ic_bookings"
+        android:title="Bookings" />
+</menu>

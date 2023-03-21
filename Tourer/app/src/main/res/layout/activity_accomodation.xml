@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".accomodationActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_cart2" />
+
+            <RelativeLayout
+                android:id="@+id/nameRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp">
+
+                <EditText
+                    android:id="@+id/edtTxtItemname1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtItemName"
+                    android:layout_marginTop="5dp"
+                    android:hint="Name"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nameRelLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameRelLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp">
+
+                <EditText
+                    android:id="@+id/edtTxtItemname3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtItemPrice"
+                    android:layout_marginTop="5dp"
+                    android:hint="Cost"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/roomRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameRelLayout3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp">
+
+                <EditText
+                    android:id="@+id/edtTxtRooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtRoomNumber"
+                    android:layout_marginTop="5dp"
+                    android:hint="Number of Rooms"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtRoomNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rooms"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/descRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/roomRelLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp">
+
+                <EditText
+                    android:id="@+id/edtTxtItemdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtItemDescription"
+                    android:layout_marginTop="3dp"
+                    android:hint="Description"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtItemDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Switch
+                android:id="@+id/swtch"
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descRelLayout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"></Switch>
+
+            <RelativeLayout
+                android:id="@+id/discountRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/swtch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp">
+
+                <EditText
+                    android:id="@+id/edtTxtdiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDiscount"
+                    android:layout_marginTop="5dp"
+                    android:hint="Discount(East African)"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/descriptionRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discountRelLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp">
+
+                <EditText
+                    android:id="@+id/edtTxtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDescription"
+                    android:layout_marginTop="5dp"
+                    android:hint="Discount Description"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnItemAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_below="@+id/descriptionRelLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_style"
+                android:text="Add Accomodation"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

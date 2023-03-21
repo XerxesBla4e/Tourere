@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "810228561811",
+    "firebase_url": "https://tourer-c42d1-default-rtdb.firebaseio.com",
+    "project_id": "tourer-c42d1",
+    "storage_bucket": "tourer-c42d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810228561811:android:ee71892e2a72b634a19a66",
+        "android_client_info": {
+          "package_name": "com.example.tourer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810228561811-sk54t1v08qravsvm8fdlq3av984ucgvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyWwjLdKpbCnJILR0Nr16xKsNi-XUYeAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810228561811-sk54t1v08qravsvm8fdlq3av984ucgvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

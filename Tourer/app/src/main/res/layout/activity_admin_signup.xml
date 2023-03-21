@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Authentication.AdminSignup">
+
+    <RelativeLayout
+        android:id="@+id/mne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/background_toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="@color/lightblue"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/bk2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shapestyle"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:tooltipText="Back"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/location"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shapestyle"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:tooltipText="Retrive RealTime Location"
+            app:srcCompat="@drawable/ic_addlocation" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/account" />
+
+        <EditText
+            android:id="@+id/edttextspecialcode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_style"
+            android:drawableStart="@drawable/ic_code"
+            android:drawablePadding="2dp"
+            android:hint="Special Code" />
+
+        <EditText
+            android:id="@+id/edttextemail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edttextspecialcode"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_style"
+            android:drawableStart="@drawable/emailsvg"
+            android:drawablePadding="2dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edttextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edttextemail"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_style"
+            android:drawableStart="@drawable/pass"
+            android:drawablePadding="2dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edttextname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edttextpassword"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_style"
+            android:drawableStart="@drawable/namesvg"
+            android:drawablePadding="2dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/edttextphone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edttextname"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_style"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="2dp"
+            android:hint="Phone Number" />
+
+        <EditText
+            android:id="@+id/edttextaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edttextphone"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_text_style"
+            android:drawableStart="@drawable/addresssvg"
+            android:drawablePadding="2dp"
+            android:hint="Address"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edttextaddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnregister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Warning"
+            android:textColor="@color/brytRed"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtWarning"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Already have an account? Login from here"
+            android:textColor="@color/lightBlue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtLicence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Developed By XerxesCodes54"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+</RelativeLayout>

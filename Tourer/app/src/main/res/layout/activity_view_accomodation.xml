@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.ViewAccomodation">
+
+    <RelativeLayout
+        android:id="@+id/mne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/background_toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="@color/lightblue"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/bk2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shapestyle"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:tooltipText="Back"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shapestyle"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:tooltipText="Details"
+            app:srcCompat="@drawable/ic_details" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/picReLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstRealLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_launcher_background"
+                tools:ignore="MissingClass"></RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_toolbar"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/recycleritemimg"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="@drawable/rounded_border"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/recycleritem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/recycleritemimg"
+                        android:fontFamily="sans-serif-condensed"
+                        android:hint="Accomodation Name"
+                        android:textColor="#000000"
+                        android:textSize="19sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/recycleritem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_below="@+id/recycleritem1"
+                        android:layout_toEndOf="@+id/recycleritemimg"
+                        android:fontFamily="sans-serif-condensed"
+                        android:hint="Rooms"
+                        android:textColor="#000000"
+                        android:textSize="19sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/recyclerprice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recycleritem4"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toEndOf="@+id/recycleritemimg"
+                        android:fontFamily="sans-serif-condensed"
+                        android:hint="Cost"
+                        android:textColor="#000000"
+                        android:textSize="19sp"
+                        android:textStyle="bold"></TextView>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Book"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
